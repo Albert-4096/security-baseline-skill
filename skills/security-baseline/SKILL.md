@@ -64,6 +64,7 @@ Then do what scripts cannot:
 
 - Read-only by default. No writes, restarts, updates, POSTs that change data, brute force, or scanning hosts the owner does not own.
 - Never print secret values. Report the variable name and file:line only.
+- Inspect config stores (DB config tables, JSON settings, `docker inspect` env) by **keys and lengths only**: `jq 'paths'`, `SELECT key FROM …`, `awk -F= '{print $1, length($2)}'`. Never dump a whole config row or file to look at it: it will contain API keys.
 - Changes (updates, chmod, config fixes) happen only after the report, and only when the requester asked for them. For updates follow "Updating safely" below.
 
 ## Step 3 — Report (this exact shape)
