@@ -1,0 +1,17 @@
+{
+  "name": "security-baseline",
+  "owner": {
+    "name": "Albert-4096",
+    "url": "https://github.com/Albert-4096"
+  },
+  "plugins": [
+    {
+      "name": "security-baseline",
+      "source": "./",
+      "description": "Security review, threat-tiering and vulnerability hunting for AI-built apps and self-hosted servers."
+    }
+  ],
+  "metadata": {
+    "description": "Security review and planning skill for AI-assisted projects and self-hosted servers."
+  }
+}

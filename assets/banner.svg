@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1a2230" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="640" fill="#0d1117"/>
+  <rect width="1280" height="640" fill="url(#g)" opacity=".6"/>
+  <g font-family="JetBrainsMono NF, JetBrains Mono, monospace">
+    <!-- shield -->
+    <path d="M110 118 l46 -18 l46 18 v44 c0 32 -20 54 -46 66 c-26 -12 -46 -34 -46 -66z" fill="none" stroke="#f0b429" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M136 162 l14 14 l28 -30" fill="none" stroke="#f0b429" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="104" y="300" font-size="58" font-weight="700" fill="#e6edf3">security-baseline</text>
+    <text x="106" y="350" font-size="25" fill="#9da7b3">Agent skill: security review for</text>
+    <text x="106" y="384" font-size="25" fill="#9da7b3">AI-built apps and self-hosted servers.</text>
+    <g font-size="20" fill="#0d1117" font-weight="700">
+      <rect x="106" y="430" width="92" height="36" rx="6" fill="#e6edf3"/><text x="122" y="455">TIER</text>
+      <rect x="210" y="430" width="132" height="36" rx="6" fill="#e6edf3"/><text x="226" y="455">EVIDENCE</text>
+      <rect x="354" y="430" width="102" height="36" rx="6" fill="#e6edf3"/><text x="370" y="455">REPORT</text>
+    </g>
+    <text x="106" y="540" font-size="18" fill="#6e7681">github.com/Albert-4096/security-baseline-skill</text>
+    <!-- report card -->
+    <rect x="790" y="96" width="420" height="448" rx="14" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+    <circle cx="820" cy="124" r="7" fill="#f85149"/><circle cx="844" cy="124" r="7" fill="#f0b429"/><circle cx="868" cy="124" r="7" fill="#3fb950"/>
+    <g font-size="17" transform="translate(30 0)">
+      <text x="790" y="184" fill="#9da7b3">Tier</text><text x="900" y="184" fill="#e6edf3" font-weight="700">T2 · accounts + PII</text>
+      <text x="790" y="220" fill="#9da7b3">Verdict</text><text x="900" y="220" fill="#f0b429" font-weight="700">fix-first</text>
+      <line x1="790" y1="246" x2="1150" y2="246" stroke="#30363d"/>
+      <text x="790" y="284" fill="#f85149" font-weight="700">HIGH</text><text x="870" y="284" fill="#e6edf3">BOLA on /v1/invoices/:id</text>
+      <text x="870" y="310" fill="#3fb950" font-size="15">CONFIRMED · invoices.ts:42</text>
+      <text x="790" y="352" fill="#f0b429" font-weight="700">MED</text><text x="870" y="352" fill="#e6edf3">X-Forwarded-For spoof</text>
+      <text x="870" y="378" fill="#3fb950" font-size="15">CONFIRMED · rate limit bypass</text>
+      <text x="790" y="420" fill="#f0b429" font-weight="700">MED</text><text x="870" y="420" fill="#e6edf3">RLS off on 2 tables</text>
+      <text x="870" y="446" fill="#d29922" font-size="15">LEAD · verify with anon key</text>
+      <line x1="790" y1="474" x2="1150" y2="474" stroke="#30363d"/>
+      <text x="790" y="510" fill="#6e7681" font-size="16">coverage: 7/9 · 2 not checked</text>
+    </g>
+  </g>
+</svg>
